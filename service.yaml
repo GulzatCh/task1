@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: service-am-i-ready
+  namespace: gulzat-task1
+spec:
+  selector:
+    id: cross-server-ready
+  ports:
+    - name: http
+      port: 80
+      targetPort: 80
